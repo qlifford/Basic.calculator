@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  background: linear-gradient(to left,white, green);
+  width: 100%;
+  justify-content: center;
+  align-content: center;  
+}
+.container{
+  margin: 20px;
+  padding: 40px;
+  width: 100%;
+  border-radius: 10px;
+  max-width: 500px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to left, green, white);
+  text-align: center;
+}
+.displayScreen{
+  border: 1px solid linear-gradient(to right,white, green);
+  border-radius: 10px;
+  /* width: 200px; */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.display{
+  text-align: center;
+  align-content: center;
+  font-size: 3.8vh;
+  width: 100%;
+  padding: 30px;
+  color: white;
+  margin-top: 20px;
+  border-radius: 15px;
+  background: transparent;
+  /* background: linear-gradient(to left, green, white); */
+  /* background-color: rgb(76, 52, 52); */
+}
+.row{
+  width: 100%;
+  justify-content: center;
+}
+
+#displaySpan{
+  align-items: end;
+}
+.inputScreen{
+  margin: 10px;
+}
+input{
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+.btn{
+  border: none;
+  padding: 15px;
+  background:rgb(56, 158, 54) ;
+  margin: 5px;
+  font-weight: bold;
+  border-radius: 50%;
+  color: aliceblue;
+}
+.btn:hover{
+  color: #000;
+  background-color: rgb(19, 174, 63);
+}
+.result{
+  font-size: large;
+}
