@@ -17,12 +17,15 @@ function addListeners() {
       const num1 = parseFloat(num1Input.value);
       const num2 = parseFloat(num2Input.value);
       if (num1Input.value === '' || num2Input.value === '') {
+        num2Input.focus();
         alert('All fields must be filled!');
         // res.textContent = 'All fields must be filled!';
         return;
       }
       if (isNaN(num1) || isNaN(num2)) {
         alert('Please enter a number!');
+        num2Input.focus();
+        num1Input.focus();
         // res.textContent = 'Please enter a number!';
         return;
       }
@@ -39,6 +42,7 @@ function addListeners() {
         if (num2 === 0) {
           // res.textContent = 'Cannot divide by zero!';
           alert('Cannot divide by zero!');
+          num2Input.focus();
           return;
         }
         answ = num1 / num2;
@@ -51,8 +55,7 @@ function addListeners() {
       res.style.borderRadius = '10px';
       num1Input.value = '';
       num2Input.value = '';
-      num2Input.focus();
-      num1Input.focus();
+      // num1Input.focus();
     });
   });
 }
